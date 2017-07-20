@@ -2,3 +2,5 @@ source 'https://rubygems.org'
 
 gem 'pg'
 gem 'sequel'
+gem 'evt-settings'
+gem 'test_bench'

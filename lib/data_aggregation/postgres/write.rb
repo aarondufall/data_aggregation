@@ -3,11 +3,13 @@ module DataAggregation
     class Write
       attr_writer :db_connection
 
+      
+
       def initialize(db_connecton)
         @db_connecton = db_connecton
       end
 
-      def write(name, position, &block) 
+      def call(name, position, &block) 
         query = db[:consumers].where(catagory_name: name).first 
         current_position = query[:position]
 
