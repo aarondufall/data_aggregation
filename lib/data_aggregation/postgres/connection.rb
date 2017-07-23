@@ -5,7 +5,7 @@ module DataAggregation
 
       def self.configure_connection(receiver, attribute = :db_connection)
         instance = build
-        reveiver.send(attribute) = instance.()
+        receiver.send :"#{attribute}=", instance.()
       end
 
       def build
