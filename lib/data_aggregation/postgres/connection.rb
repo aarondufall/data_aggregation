@@ -8,8 +8,8 @@ module DataAggregation
         receiver.send :"#{attribute}=", instance.()
       end
 
-      def build
-        # Use setting to configure
+      def self.build
+        # TODO Use setting to configure
       end
 
       def initialize(name, config = {})
