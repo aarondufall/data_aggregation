@@ -13,3 +13,4 @@ gems_backup
 loader.rb
 gems.txt
 settings/
+.idea
